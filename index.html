@@ -10,33 +10,34 @@
       <div class="left-side">
         <div class="title">
           <img src="imgs/odin-lined.png" alt="odin-logo" />
-          <h1>ODIN bot</h1>
+          <h1>ODIN</h1>
         </div>
-        <p class="credit">
+        <footer>
+          <p>
           photo by
           <a href="https://unsplash.com/@haliewestphoto">Halie West</a>
           on
           <a
             href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
-            >unsplash</a
-          >
-        </p>
+            >unsplash</a>
+          </p>
+        </footer>
+
       </div>
       <div class="right-side">
         <div class="greeting">
           <p>
           This is not a real online service!
             You know you need something like this in your life to help you
-            realize your deepest dreams.
+            realize your deepest dreams.<br>
+            sign up <em>now</em> to get started.
           </p>
-          <p>sign up <em>now</em> to get started.</p>
-          <br />
           <p>You <em>know</em> you want to.</p>
         </div>
-        <form method="post">
+        <form class="form" action="#" method="post">
           <fieldset class="form-details">
             <h2>Let's do this!</h2>
-            <div class="form-container">
+            <div class="form-inputs">
               <div class="form-groups">
                 <label for="first-name">FIRST NAME</label>
                 <input type="text" name="first-name" id="first-name" />
@@ -59,8 +60,9 @@
                   type="password"
                   name="password"
                   id="password"
-                  pattern="/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/"
-                />
+                  pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[#?!@$%^&*-]).{6,10}"
+                  required
+                >
               </div>
               <div class="form-groups">
                 <label for="confirm-password">CONFIRM PASSWORD</label>
