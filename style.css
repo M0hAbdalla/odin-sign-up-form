@@ -1,0 +1,122 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* caesar-dressing-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Caesar Dressing";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/caesar-dressing-v22-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+body {
+  margin: 0;
+  font-size: 17px;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-side {
+  flex: 1;
+  background: url(imgs/halie-west-25xggax4bSA-unsplash.jpg) 0% / cover no-repeat;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+ 
+.left-side .credit {
+  display: flex;
+  justify-content: center;
+}
+
+.right-side {
+  flex: 2;
+  background-color: #ebebeb;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  box-sizing: border-box;
+  background-color: rgb(0, 0, 0, 0.5);
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding: 20px
+  height: 150px;
+  margin-top: 160px;
+}
+.title img {
+  width: 8rem;
+  height: 100%;
+}
+
+.title h1 {
+  margin: 0;
+  font-family: "Caesar Dressing";
+  font-size: 80px;
+}
+
+.greeting {
+  max-width: 500px;
+  margin: 100px 30px 20px;
+  /* padding: 8px 3px 3px; */
+  font-size: 4.5rem:
+}
+
+.form-details {
+  background: white;
+}
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-top: 3rem; */
+  gap: 20px;
+  max-width: 700px;
+  /* background-color: white; */
+  /* padding: 3rem; */
+}
+
+.form-groups {
+  flex: 1 1 calc(50% - 10px);
+  display: flex;
+  flex-direction: column;
+}
+.form-details legend {
+position: absolute;
+font-size: 30px;
+background-color: white;
+}
+
+
+label {
+  font-family: Arial, Helvatica, san, serif;
+  letter-spacing: 1.5px;
+}
