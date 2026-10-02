@@ -182,7 +182,7 @@ input:focus {
 }
 
 #password:invalid {
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 #password:valid {
   outline: 1px solid rgb(10, 215, 10);
